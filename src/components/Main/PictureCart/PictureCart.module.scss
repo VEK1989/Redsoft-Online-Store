@@ -1,0 +1,42 @@
+.cart{
+	width: 280px;
+	height: 328px;
+	margin: 0 23px 23px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border: 1px solid #E1E1E1;
+
+	&:last-child{
+		margin: 0;
+	}
+
+	&__discription{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 24px 24px;
+
+		&__name{
+			font-size: 22px;
+		}
+
+		&__name_sold{
+			font-size: 22px;
+			color: #34303095;
+		}
+
+		&__price{
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}
+
+.sold{
+	color: #34303095;
+}

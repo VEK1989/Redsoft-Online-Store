@@ -1,0 +1,14 @@
+.button{
+	padding: 15px 36px;
+	background-color: #403432;
+	color: #ffffff;
+	border: none;
+	font-size: 17px;
+
+	&:hover{
+		cursor: pointer;
+		background-color: #776763;
+		color: #F4F6F9;
+		transition: cubic-bezier(1, 0, 0, 1) .3s all;
+	}
+}
