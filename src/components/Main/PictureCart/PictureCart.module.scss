@@ -1,7 +1,7 @@
-.cart{
+.blok{
 	width: 280px;
 	height: 328px;
-	margin: 0 23px 23px 0;
+	margin: 0 0 23px 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -12,11 +12,16 @@
 		margin: 0;
 	}
 
+	&__picture_sold{
+		filter: alpha(Opacity=50);
+		opacity: 0.5; 
+	}
+
 	&__discription{
+		height: 45%;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-items: center;
 		padding: 0 24px 24px;
 
 		&__name{
@@ -35,8 +40,9 @@
 			align-items: center;
 		}
 	}
+
+	.sold{
+		color: #34303095;
+	}
 }
 
-.sold{
-	color: #34303095;
-}

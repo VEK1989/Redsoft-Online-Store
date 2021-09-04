@@ -8,21 +8,27 @@ import picture4 from '../../images/picture4.jpg';
 
 const Main = () => {
 	const [carts, setCarts] = useState([
-		{ url: picture1, name: '«Рождение Венеры» Сандро Боттичелли', price: '2 000 000 $', discount: true, inBasket: false, sold: false },
-		{ url: picture2, name: '«Тайная вечеря»  Леонардо да Винчи', price: '3 000 000 $', discount: false, inBasket: false, sold: false },
-		{ url: picture3, name: '«Сотворение Адама» Микеланджело', price: '6 000 000 $', discount: true, inBasket: false, sold: false },
-		{ url: picture4, name: '«Урок анатомии» Рембрандт', price: '6 000 000 $', discount: false, inBasket: false, sold: true }
+		{ id: 1, url: picture1, name: '«Рождение Венеры» Сандро Боттичелли', price: '2 000 000 $', discount: true, inBasket: false, sold: false },
+		{ id: 2, url: picture2, name: '«Тайная вечеря»  Леонардо да Винчи', price: '3 000 000 $', discount: false, inBasket: false, sold: false },
+		{ id: 3, url: picture3, name: '«Сотворение Адама» Микеланджело', price: '6 000 000 $', discount: true, inBasket: false, sold: false },
+		{ id: 4, url: picture4, name: '«Урок анатомии» Рембрандт', price: '6 000 000 $', discount: false, inBasket: false, sold: true },
 	])
 
+	const [cart, setCart] = useState([])
+
+	console.log(cart)
+
 	return (
-		<div className={style.main}>
-			<p className={style.main__header}>Картины эпохи Возрождения</p>
-			<section className={style.goods}>
-				{
-					carts.map(item => <PictureCart item={item} />)
-				}
-			</section>
-		</div>
+		<main className={style.main}>
+			<div className={style.container}>
+				<p className={style.main__header}>Картины эпохи Возрождения</p>
+				<section className={style.goods}>
+					{
+						carts.map(item => <PictureCart key={item.id} item={item} setCart={setCart} cart={cart} />)
+					}
+				</section>
+			</div>
+		</main>
 	);
 };
 

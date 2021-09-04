@@ -1,7 +1,44 @@
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul,
+ol,
+li{
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html, 
+body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Merriweather';
+  color: #343030;
+  font-size: 17px;
+}
+
 @font-face{
   font-family: 'Merriweather';
-  src: local('Merriweather') url('./fonts/Merriweather-Regular.woff') format('woff'), /* Modern Browsers */
-  local('Merriweather') url('./fonts/Merriweather-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  src: local('Merriweather') url('./fonts/Merriweather-Regular.woff') format('woff'),
+  local('Merriweather') url('./fonts/Merriweather-Regular.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal; 
 }
@@ -13,19 +50,6 @@
   font-weight: bold;
   font-style: normal; 
 }
-
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Merriweather';
-  color: #343030;
-  font-size: 17px;
-}
-
-
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

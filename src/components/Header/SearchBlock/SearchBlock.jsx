@@ -5,10 +5,10 @@ import MyButton from '../../UI/MyButton/MyButton';
 
 const SearchBlock = () => {
 	return (
-		<div className={style.search}>
+		<form className={style.search}>
 			<MyInput placeholder='Поиск по названию картины' />
 			<MyButton>Найти</MyButton>
-		</div>
+		</form>
 	);
 };
 

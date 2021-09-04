@@ -1,15 +1,20 @@
 .main{
-	margin: 0 auto;
-	max-width: 1216px;
+	flex: 1 0 auto;
+
+	.container{
+		margin: 0 auto;
+		max-width: 1216px;
+	}
 
 	&__header{
 		font-size: 29px;
 		font-weight: bold;
 		margin: 45px 0 40px 0;
 	}
-}
 
-.goods{
-	display: flex;
-	justify-content: space-between;
+	.goods{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
 }

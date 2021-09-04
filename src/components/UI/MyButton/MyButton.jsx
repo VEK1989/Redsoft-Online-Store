@@ -2,8 +2,10 @@ import React from 'react';
 import style from './MyButton.module.scss'
 
 const Button = ({ children, ...props }) => {
+
+
 	return (
-		<button {...props} className={style.button}>
+		<button {...props} className={props.disabled ? style.disable : style.button}>
 			{children}
 		</button>
 	);
