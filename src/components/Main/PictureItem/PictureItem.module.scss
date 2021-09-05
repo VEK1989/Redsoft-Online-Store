@@ -42,7 +42,18 @@
 	}
 
 	.sold{
+		margin-bottom: 10px;
 		color: #34303095;
+	}
+
+	.discount{
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 150%;
+		display: flex;
+		align-items: center;
+		text-decoration-line: line-through;
+		color: #A0A0A0;
 	}
 }
 
