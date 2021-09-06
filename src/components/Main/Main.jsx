@@ -26,7 +26,6 @@ const Main = () => {
 						items.map(item => <PictureItem
 							key={item.id}
 							item={item}
-							setItems={setItems}
 							setCart={setCart}
 							cart={cart}
 						/>)

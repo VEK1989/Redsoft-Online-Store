@@ -1,7 +1,7 @@
 .button{
-	padding: 15px 36px;
+	padding: 13px 32px;
 	background: #403432;
-	color: #ffffff;
+	color: #F4F6F9;
 	border: none;
 	font-size: 17px;
 
@@ -11,11 +11,19 @@
 		color: #F4F6F9;
 		transition: cubic-bezier(1, 0, 0, 1) .3s all;
 	}
+	
+	.disable{
+		padding: 13px 32px;
+		background: #C1B4B1;
+		border: none;
+		font-size: 17px;
+		color: #F4F6F9;
+	}
 }
 
-.disable{
-	padding: 15px 36px;
-	background: #C1B4B1;
+.inCart{
+	padding: 12px 9px;
+	background: #5B3A32;
 	border: none;
 	font-size: 17px;
 	color: #F4F6F9;
