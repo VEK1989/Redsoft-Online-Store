@@ -2,11 +2,11 @@ import React from 'react';
 import style from './MyButton.module.scss';
 import cn from 'classnames';
 
-const Button = ({ children, ...props }) => {
+const Button = ({ children, inCart, ...props }) => {
 	const btnClass = cn({
-		[style.button]: !props.inCart,
+		[style.button]: !inCart,
 		[style.disable]: props.disabled,
-		[style.inCart]: props.inCart
+		[style.inCart]: inCart
 	});
 
 	return (

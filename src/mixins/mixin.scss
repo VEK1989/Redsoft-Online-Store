@@ -1,0 +1,17 @@
+@mixin  container {
+	width: 1216px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin btnStyle {
+	border: none;
+	color: #F4F6F9;
+	font-size: 17px;
+}
+
+@mixin btnStandartPadding {
+	padding: 13px 32px;
+}
