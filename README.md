@@ -1,2 +1,2 @@
 Ссылка на деплой
-https://dashboard.heroku.com/apps 
+https://painting-shop.herokuapp.com/
