@@ -1,8 +1,8 @@
 @import '../../mixins/mixin.scss';
 
 .footer{
+	flex: 0 0 auto;
 	min-height: 97px;
-	padding: 0 2px;
 	background-color: #ECEAEA;
 	display: flex;
 	justify-content: space-between;
